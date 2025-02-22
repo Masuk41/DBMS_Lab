@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ride Sharing System</title>
+</head>
+<body>
+    <h2>Request a Ride</h2>
+    <form method="POST" action="request_ride.php">
+        User ID: <input type="number" name="user_id" required><br>
+        Pickup Location: <input type="text" name="pickup" required><br>
+        Destination: <input type="text" name="destination" required><br>
+        Priority (1 = High, 5 = Low): <input type="number" name="priority" required min="1" max="5"><br>
+        <input type="submit" value="Request Ride">
+    </form>
+
+    <h2>Assign Ride</h2>
+    <form method="POST" action="assign_ride.php">
+        <input type="submit" value="Assign Next Ride">
+    </form>
+</body>
+</html>
+
